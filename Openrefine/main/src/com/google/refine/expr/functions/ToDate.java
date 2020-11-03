@@ -109,7 +109,8 @@ public class ToDate implements Function {
         if(date != null) {
             return date;
         }
-        return new EvalError("Unable to convert to a date");
+        return "Unable to convert to a date";
+        //return new EvalError("Unable to convert to a date");
     }
     
     private OffsetDateTime parse(String o1, Boolean month_first, List<String> formats) {
